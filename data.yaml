@@ -1,0 +1,5 @@
+train: r"N:\College\Anotha Internship\Datasets\final\train\images"
+val: r"N:\College\Anotha Internship\Datasets\final\val\images"
+
+nc: 4
+names: ['bus', 'car', 'motorcycle', 'truck']
