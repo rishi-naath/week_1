@@ -12,20 +12,20 @@ import datetime
 import yaml
 
 # === PATHS TO SCRIPTS ===
-DETECT_SCRIPT = r"N:\College\Anotha_Project\yolov7\detect.py"
-LOGGING_SCRIPT = r"N:\College\Anotha_Internship\class-wise Detection\class_filter.py"
-SIGNAL_SCRIPT = r"N:\College\Anotha_Internship\DTS\dig_tr_sgn.py"
-WEIGHTS_PATH = r"N:\College\Anotha_Project\yolov7\runs\train\vehicle_detection_final\weights\best.pt"
+DETECT_SCRIPT = r"yolov7/detect/script"
+LOGGING_SCRIPT = r"class_filter/directory"
+SIGNAL_SCRIPT = r"virtual/signal/script"
+WEIGHTS_PATH = r"directory/to/best/weights"
 
 # === DETECTION OUTPUT ===
-DETECT_PROJECT = r"N:\College\Anotha_Project\yolov7\runs\detect"
+DETECT_PROJECT = r"path/of/detect/folder"
 DETECT_RUN_NAME = f"gui_run_{datetime.datetime.now().strftime('%Y%m%d_%H%M%S')}"
 LABEL_DIR = os.path.join(DETECT_PROJECT, DETECT_RUN_NAME, "labels")
 
 # === Runtime files ===
-LABEL_PATH_FILE = r"N:\College\Anotha_Internship\class-wise Detection\label_path.txt"
-VIDEO_PATH_FILE = r"N:\College\Anotha_Internship\class-wise Detection\video_path.txt"
-LATEST_JSON = r"N:\College\Anotha_Internship\class-wise Detection\detected_results\latest_counts.json"
+LABEL_PATH_FILE = r"dir/to/write/label"
+VIDEO_PATH_FILE = r"dir/to/video/path"
+LATEST_JSON = r"in the form of/detected_results/detected.json"
 
 processes = []
 proc_lock = threading.Lock()
@@ -41,7 +41,7 @@ def purge_old_outputs():
                     pass
 
     # Delete stale JSON
-    json_path = os.path.join("N:\\College\\Anotha_Internship\\Class-wise Detection\\detected_results", "latest_counts.json")
+    json_path = os.path.join(".....\\Class-wise Detection\\detected_results", "latest_counts.json")
     try:
         os.remove(json_path)
     except Exception:
@@ -59,7 +59,7 @@ def run_detection(source, conf_thres, status_widget):
     cmd = [
     sys.executable, DETECT_SCRIPT,
     "--source", str(source),
-    "--weights", r"N:\College\Anotha_Project\yolov7\runs\train\vehicle_detection_final\weights\best.pt",
+    "--weights", r"best/weights/path",
     "--save-txt",
     "--save-conf",
     "--project", DETECT_PROJECT,
@@ -258,4 +258,5 @@ def build_gui():
     root.mainloop()
 
 if __name__ == "__main__":
+
     build_gui()
