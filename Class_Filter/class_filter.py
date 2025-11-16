@@ -6,11 +6,11 @@ import logging
 from collections import defaultdict
 
 # === CONFIGURATION ===
-yaml_path = r'N:\College\Anotha_Project\yolov7\data\cardata.yaml'
-with open(r"N:\College\Anotha_Internship\Class-wise Detection\label_path.txt", "r") as f:
+yaml_path = r'path\to\your\config'
+with open(r"directory\where\label\is\created", "r") as f:
     label_dir = f.read().strip()
-save_dir = r'N:\College\Anotha_Internship\Class-wise Detection\detected_results'
-filename = "detected_results_1.txt"
+save_dir = r'dir\to\your\save'
+filename = "detected_results.txt"
 LATEST_JSON = os.path.join(save_dir, "latest_counts.json")
 
 class_thresholds = {
@@ -58,7 +58,7 @@ def process_label_file(file_path):
                 local_counts[class_name] += 1
     return local_counts
 
-def write_snapshot(file_name, local_counts):
+def write_snapshot(file_name, local_counts):                  #creates a dedicated .txt file to mark the vehicles counted per frame
     snapshot = {
         "ts": time.time(),
         "frame": file_name,
@@ -102,3 +102,4 @@ if __name__ == "__main__":
     while True:
         main_loop()
         time.sleep(1.0)
+
