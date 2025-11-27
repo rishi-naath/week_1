@@ -1,5 +1,5 @@
-train: r"N:\College\Anotha Internship\Datasets\final\train\images"
-val: r"N:\College\Anotha Internship\Datasets\final\val\images"
+train: r"dir\to\train\folder"
+val: r"dir\to\val"
 
 nc: 4
 names: ['bus', 'car', 'motorcycle', 'truck']
