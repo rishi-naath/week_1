@@ -119,6 +119,7 @@ Traffic in metropolitan cities, as we know, has become a part of the bustling cu
 # Extras:
 
   - Specifics of each module are specified in both the ***readme*** and inside them.
+  - Virtual Environment (_venv_) is encouraged if you don't want to revert to older versions.
   - If in need of merging multiple datasets and syncing/relabelling the labels, make use of ***Remap+Merge Wrapper*** modules that might be of help.
   - Notebook versions are also added for straightforward explanation with fewer tech terms.
 
