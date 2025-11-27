@@ -1,9 +1,19 @@
-# Core Python libraries (already included in standard library, no need to install):
-# os, sys, time, json, logging, threading, subprocess, glob, datetime, signal, collections
+# Core ML/Detection stack 
+torch==2.4.1
+torchvision==0.19.1
+numpy==1.26.4
+opencv-python==4.10.0.84
+PyYAML==6.0.2
 
-# External dependencies:
-PyYAML==6.0.2        # for YAML parsing in class_filter.py and orchestrator_gui.py
-opencv-python==4.10.0.84   # for cv2 video overlay in dig_tr_sgn.py
-numpy==1.26.4        # required by OpenCV and YOLOv7
-torch==2.4.1         # YOLOv7 backbone (PyTorch)
-torchvision==0.19.1  # YOLOv7 utilities
+# YOLOv7 common extras 
+matplotlib==3.9.2
+pandas==2.2.3
+scipy==1.14.1
+seaborn==0.13.2
+tqdm==4.66.5
+requests==2.32.3
+psutil==6.1.0
+
+# Optional 
+pycocotools==2.0.7
+Pillow==11.0.0
