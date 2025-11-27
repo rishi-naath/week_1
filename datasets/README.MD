@@ -11,5 +11,7 @@ Extras (Vehicles + License plates): https://www.kaggle.com/datasets/saumyapatel/
 
 **Update:**
         - The dataset has been uploaded
+
         - I've used a small dataset since that's the amt the system was able to train at in a decent rate.
+
         - Merged images from all three datasets and custom labelled them.
