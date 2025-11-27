@@ -252,8 +252,8 @@ def build_gui():
             return
         launch_from_gui(s, conf, status_txt)
 
-    tk.Button(btn_frame, text="🚀 Launch Pipeline", bg="green", fg="white", width=18, command=on_launch).grid(row=0, column=0, padx=8)
-    tk.Button(btn_frame, text="🛑 Stop Pipeline", bg="red", fg="white", width=18, command=lambda: stop_pipeline(status_txt)).grid(row=0, column=1, padx=8)
+    tk.Button(btn_frame, text=" Launch Pipeline", bg="green", fg="white", width=18, command=on_launch).grid(row=0, column=0, padx=8)
+    tk.Button(btn_frame, text=" Stop Pipeline", bg="red", fg="white", width=18, command=lambda: stop_pipeline(status_txt)).grid(row=0, column=1, padx=8)
 
     root.mainloop()
 
