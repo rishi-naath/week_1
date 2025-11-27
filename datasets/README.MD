@@ -8,3 +8,8 @@ Vehicles (top-down view): https://www.kaggle.com/datasets/farzadnekouei/top-view
 
 
 Extras (Vehicles + License plates): https://www.kaggle.com/datasets/saumyapatel/traffic-vehicles-object-detection?select=Traffic+Dataset
+
+**Update:**
+        - The dataset has been uploaded
+        - I've used a small dataset since that's the amt the system was able to train at in a decent rate.
+        - Merged images from all three datasets and custom labelled them.
