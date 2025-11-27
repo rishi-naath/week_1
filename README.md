@@ -9,3 +9,22 @@ Traffic in metropolitan cities, as we know, has become a part of the bustling cu
 - Functions with both **live feeds** and **pre-recorded** traffic cam frames.
 - **Multi-feed** access is a bit buggy, will be updated as soon as it's resolved.
 
+# Instructions:
+
+1. clone the following repository if you want to train with your custom data:
+(note: this repo is optional, but a must-have for re-training and should be in a separate folder:)
+
+                            cd dir/yolov7
+   
+                            git clone https://github.com/WongKinYiu/yolov7
+
+2. then, on a separate location, clone this repo:
+   
+                            cd dir/folder
+
+                            git clone https://github.com/rishi-naath/Traffic-Control-and-Urban-Mobility-via-YOLOv7/edit/main/README.md
+
+3. as usual, now use the requirements file to download the necessities:
+
+                           pip install -r requirements.txt
+
